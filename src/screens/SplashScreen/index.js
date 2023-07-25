@@ -1,18 +1,17 @@
-import React,{ useEffect} from "react"
-import { Text, Logo, Container } from '../../components';
+import React, { useEffect } from 'react'
+import { Text, Logo, Container } from '../../components'
 
 export const SplashScreen = ({ navigation }) => {
-
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate('Home')
-    }, 1000);
-  },[navigation])
-  
+    }, 1000)
+  }, [navigation])
+
   return (
     <Container aling="center" just="center">
-      <Logo/>
+      <Logo />
       <Text>StarWars - Wiki</Text>
     </Container>
-  );
+  )
 }
